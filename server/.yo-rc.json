@@ -1,0 +1,14 @@
+{
+  "generator-kraken": {
+    "taskModule": "grunt",
+    "lintModule": "eslint",
+    "description": "to serve the test application",
+    "author": "Bruno Tavares de Moraes Russo",
+    "templateModule": "dustjs",
+    "i18n": false,
+    "componentPackager": false,
+    "cssModule": false,
+    "jsModule": false,
+    "useJson": null
+  }
+}
