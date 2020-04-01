@@ -7,7 +7,8 @@
     "scripts": {
         "test": "grunt test",
         "build": "grunt build",
-        "all": "npm run build && npm run test"
+        "all": "npm run build && npm run test",
+        "start": "nodemon server.js"
     },
     "dependencies": {
         "adaro": "^0.1.10",
@@ -31,6 +32,7 @@
         "grunt-eslint": "^17.3.2",
         "grunt-mocha-cli": "^1.14.0",
         "mocha": "^1.18.0",
-        "supertest": "^0.9.0"
+        "supertest": "^0.9.0",
+        "nodemon": "2.0.2"
     }
 }

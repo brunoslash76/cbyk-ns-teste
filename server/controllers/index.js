@@ -1,18 +1,17 @@
-'use strict';
+"use strict";
+var validateDefaults = require("../utils/validations");
 
-var IndexModel = require('../models/index');
+module.exports = function(router) {
+    router.get("/", function(req, res) {
+        var body = req.body;
 
+        if (!body) res.status(401).send([1, 2, 3, 9]);
+        var errors = validateDefaults(body);
 
-module.exports = function (router) {
+        if (errors.hasError) {
+            return res.status(400).send(errors);
+        }
 
-    var model = new IndexModel();
-
-    router.get('/', function (req, res) {
-        
-        
-        res.render('index', model);
-        
-        
+        res.status(200).send("Tetas");
     });
-
 };
