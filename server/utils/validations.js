@@ -6,7 +6,6 @@ module.exports = function validateDefaults(defaultValues) {
         attrErrorMessage: [],
         hasError: false
     };
-
     var airports = defaultValues.airports;
     var clouds = defaultValues.clouds;
     var terrain = defaultValues.terrain;
